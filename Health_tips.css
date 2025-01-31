@@ -1,0 +1,98 @@
+body 
+{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef5f9;
+    color: #333;
+}
+
+header 
+{
+    background-color: #0047ab;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header img 
+{
+    max-width: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.container 
+{
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.container h2 
+{
+    text-align: center;
+    color:#0047ab;
+}
+
+.tips 
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.tip-card 
+{
+    background: #f9fcfd;
+    border-radius: 8px;
+    flex: 1 1 calc(45% - 10px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tip-card:hover 
+{
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tip-card img 
+{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.tip-card-content 
+{
+    padding: 15px;
+}
+
+.tip-card-content h3 
+{
+    color: #0047ab;
+    margin-bottom: 10px;
+}
+
+.tip-card-content p 
+{
+    font-size: 0.95rem;
+    color: #555;
+}
+
+footer 
+{
+    text-align: center;
+    padding: 10px;
+    background: #0047ab;
+    color: white;
+    margin-top: 20px;
+}

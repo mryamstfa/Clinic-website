@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="image/logo2.jpg" alt="Logo">
+                
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a class="active" href="book_appointment.php">Appointment</a></li>
+                <li><a href="page2.php">Drugs</a></li>
+               
+            </ul>           
+        </nav>
+    </header>
+    <img src="image/background.jpg" alt="background">
+    <div class="overlay"></div>
+    <div class="appointment-form">
+        <h1><span>BOOK</span> APPOINTMENT</h1>
+        <form id="appointmentForm">
+            <div class="form-group">
+                <label for="patient-name">Patient Name</label>
+                <input type="text" id="patient-name" placeholder="Enter Patient Name" required>
+            </div>
+            <div class="form-group">
+                <label for="doctor-name">Doctor's Name</label>
+                <select id="doctor-name" required>
+                    <option value="">Select Doctor</option>
+                    <option value="Dr. Andro">Dr. Andro</option>
+                    <option value="Dr. Gee">Dr. Gee</option>
+                    <option value="Dr. Maryoma">Dr. Maryoma</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="department">Department</label>
+                <select id="department" required>
+                    <option value="">Select Department</option>
+                    <option value="Cardiology">Cardiology</option>
+                    <option value="Neurology">Neurology</option>
+                    <option value="Orthopedics">Orthopedics</option>
+                    <option value="Therapist">Therapist</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="phone-number">Phone Number</label>
+                <input type="tel" id="phone-number" placeholder="Enter Phone Number" pattern="(?:\+20|0)?1[0-5]\d{8}" required>
+            </div>
+            <div class="form-group">
+                <label for="appointment-date">Appointment Date</label>
+                <input type="date" id="appointment-date" required>
+            </div>
+            <button type="submit">Book Appointment</button>
+        </form>
+        <div id="success-message" class="hidden">  Your appointment has been successfully booked! </div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>

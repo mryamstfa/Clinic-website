@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Good Clinic - Educational Blog</title>
+  <link rel="stylesheet" href="blogstyle.css">
+</head>
+<body>
+  <header class="header">
+    <h1>GoodHealth Clinic Educational Blog</h1>
+    <p>Explore health tips</p>
+  </header>
+  <main class="blog-container">
+    <div class="blog-post" onclick="showPost(1)">
+      <img src="images/diabetes.jpg" alt="Preventative Care">
+      <div class="content">
+        <h2>Diabetes Mellitus</h2>
+        <p>Description , Symptoms and Treatment</p>
+      </div>
+    </div>
+    <div class="blog-post" onclick="showPost(2)">
+      <img src="images/hypertension.jpg" alt="Vaccinations">
+      <div class="content">
+        <h2>Hypertension (High Blood Pressure)</h2>
+        <p>Description , Symptoms and Treatment</p>
+      </div>
+    </div>
+    <div class="blog-post" onclick="showPost(3)">
+      <img src="images/Tuberculosis (TB).jpg" alt="Stress Management">
+      <div class="content">
+        <h2>Tuberculosis (TB)</h2>
+        <p>Description , Symptoms and Treatment</p>
+      </div>
+    </div>
+    <div class="blog-post" onclick="showPost(4)">
+      <img src="images/Alzheimer's Disease.jpg" alt="Healthy Diet">
+      <div class="content">
+        <h2>Alzheimer's Disease</h2>
+        <p>Description , Symptoms and Treatment</p>
+      </div>
+    </div>
+    <div class="blog-post" onclick="showPost(5)">
+      <img src="images/Asthma.jpg" alt="Exercise Benefits">
+      <div class="content">
+        <h2>Asthma</h2>
+        <p>Description , Symptoms and Treatment</p>
+      </div>
+    </div>
+    <div class="blog-post" onclick="showPost(6)">
+      <img src="images/Dengue Fever.jpg" alt="Sleep Health">
+      <div class="content">
+        <h2>Dengue Fever</h2>
+        <p>Description , Symptoms and Treatment</p>
+      </div>
+    </div>
+  </main>
+  <div class="modal" id="postModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="postTitle"></h2>
+      <p id="postContent"></p>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>&copy; 2024 Good Clinic. All rights reserved.</p>
+  </footer>
+  <script src="blogjs.js"></script>
+</body>
+</html>

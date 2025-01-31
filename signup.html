@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="loginp.css">
+</head>
+<body>
+  <form id="signupForm">
+    <div class="imgcontainer">
+      <img src="images/logo2.jpg" alt="GoodHealth Logo" class="logo">
+    </div>
+
+    <div class="container">
+      <label for="email"><b>Email</b></label>
+      <input type="email" id="email" placeholder="Enter Email" name="email" required>
+
+      <label for="uname"><b>Username</b></label>
+      <input type="text" id="uname" placeholder="Choose a Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" id="psw" placeholder="Create a Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" id="psw-repeat" placeholder="Repeat Password" name="psw-repeat" required>
+
+      <label for="dob"><b>Date of Birth</b></label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="gender"><b>Gender</b></label>
+      <select id="gender" name="gender" required>
+        <option value="" disabled selected>Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="contactNumber"><b>Contact Number</b></label>
+      <input type="tel" id="contactNumber" placeholder="Enter Contact Number" name="contactNumber" required>
+
+      <label for="address"><b>Address</b></label>
+      <textarea id="address" name="address" placeholder="Enter Address" required></textarea>
+
+      <label for="medicalHistory"><b>Medical History</b></label>
+      <textarea id="medicalHistory" name="medicalHistory" placeholder="Enter Medical History" required></textarea>
+
+      <button type="button" id="signupBtn">Sign Up</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <span class="psw">Already have an account? <a href="login.html">Login</a></span>
+    </div>
+  </form>
+
+  <script defer src="signup.js"></script>
+</body>
+</html>

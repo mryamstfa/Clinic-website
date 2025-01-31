@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1b00b7, #8b5cf6);
+  color: #333;
+  background-image: url('image/login_back.jpg'); 
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat;
+ 
+}
+
+form {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  animation: slideDown 0.7s ease-in-out;
+}
+
+.imgcontainer {
+  text-align: center;
+  padding: 20px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #1b00b7;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="date"], select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="date"]:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #1b00b7;
+  box-shadow: 0 0 5px rgba(27, 0, 183, 0.5);
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+button {
+  background: linear-gradient(90deg, #1b00b7, #5e17eb);
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #5e17eb, #1b00b7);
+  transform: scale(1.05);
+}
+
+.cancelbtn {
+  background: #f44336;
+  transition: all 0.3s ease-in-out;
+}
+
+.cancelbtn:hover {
+  background: #d32f2f;
+  transform: scale(1.05);
+}
+
+.container {
+  padding: 20px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+span.psw a {
+  color: #1b00b7;
+  text-decoration: none;
+}
+
+span.psw a:hover {
+  text-decoration: underline;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 400px) {
+  form {
+    width: 90%;
+  }
+}
